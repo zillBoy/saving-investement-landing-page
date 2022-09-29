@@ -7,8 +7,9 @@ import React, { useState } from "react";
  * Internal Dependencies
  */
 import NavbarItem from "./NavbarItem";
-import { mobileNavbarItem } from "../../utils/constants";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import ReactPortal from "../ReactPortal/ReactPortal";
+import { mobileNavbarItem } from "../../utils/constants";
 
 const NavbarMobile = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -19,7 +20,14 @@ const NavbarMobile = () => {
 
   return (
     <>
-      {menuVisible && <MobileMenu />}
+      {menuVisible && (
+        <ReactPortal wrapperId="portal-mobilemenu">
+          <MobileMenu
+            isOpen={menuVisible}
+            handleClose={() => setMenuVisible(false)}
+          />
+        </ReactPortal>
+      )}
       <div className="block sm:hidden">
         <NavbarItem item={mobileNavbarItem} onClick={toggleMenuHandler} />
       </div>

@@ -3,9 +3,15 @@
  */
 import React from "react";
 
-const NavbarItem = ({ item = {}, ...props }) => {
+const NavbarItem = ({ item = {}, className = "", ...props }) => {
+  console.log(className);
+
   return (
-    <a className="text-zinc-300 text-lg mx-3" href={item?.link} {...props}>
+    <a
+      className={`text-zinc-300 mx-3 ${className}`}
+      href={item?.link}
+      {...props}
+    >
       {item?.name}
     </a>
   );

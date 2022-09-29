@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Navbar />
       {Array.from(Array(100).keys()).map((e) => (
-        <p>hlelo</p>
+        <p key={e}>hlelo</p>
       ))}
       <p>Hello</p>
     </>
