@@ -4,8 +4,6 @@
 import React from "react";
 
 const NavbarItem = ({ item = {}, className = "", ...props }) => {
-  console.log(className);
-
   return (
     <a
       className={`text-zinc-300 mx-3 ${className}`}

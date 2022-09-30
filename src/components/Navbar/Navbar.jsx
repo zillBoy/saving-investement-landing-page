@@ -13,7 +13,7 @@ import NavbarMobile from "./NavbarMobile";
 
 const Navbar = () => {
   return (
-    <div className="flex py-4 px-4 sm:px-8 items-center justify-between bg-neutral-900">
+    <div className="flex py-4 items-center justify-between bg-neutral-900">
       <NavbarLogo />
       <NavbarList />
       <Button text="Get started" parentClassName="hidden sm:block" />

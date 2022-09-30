@@ -2,16 +2,21 @@
  * React Dependencies
  */
 import React from "react";
+import ContentWrapper from "./components/ContentWrapper/ContentWrapper";
+import HeroHeader from "./components/HeroHeader/HeroHeader";
 import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      {Array.from(Array(100).keys()).map((e) => (
-        <p key={e}>hlelo</p>
-      ))}
-      <p>Hello</p>
+      <ContentWrapper className="bg-neutral-900">
+        <Navbar />
+        <HeroHeader />
+      </ContentWrapper>
+
+      <ContentWrapper>
+        <div>Hello world</div>
+      </ContentWrapper>
     </>
   );
 };

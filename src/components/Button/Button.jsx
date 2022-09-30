@@ -28,7 +28,7 @@ const Button = ({
   return (
     <div className={parentClassName}>
       <button
-        className={`py-4 px-6 text-lg text-white bg-gradient-to-br ${color}  ${className}`}
+        className={`py-3 px-6 text-base sm:py-4 sm:px-9 sm:text-lg text-white bg-gradient-to-br ${color}  ${className}`}
         {...props}
       >
         {text}
