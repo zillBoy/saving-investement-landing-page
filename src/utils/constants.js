@@ -1,6 +1,9 @@
-/**
- * Navbar
- */
+// ******************
+// Components
+// ******************
+
+// Navbar
+
 export const navbarItems = [
   {
     name: "Savings",
@@ -25,7 +28,33 @@ export const mobileNavbarItem = {
   link: "#",
 };
 
+// HeroHeader
+
+export const heroHeadings = [
+  { text: "Save", color: "primary-gradient", className: "inline pr-2 sm:pr-4" },
+  { text: "and", className: "inline pr-2 sm:pr-4" },
+  {
+    text: "Invest",
+    color: "secondary-gradient",
+    className: "inline pr-2 sm:pr-4",
+  },
+  {
+    text: "your Money all in one place.",
+    className: "inline pr-2 sm:pr-4",
+  },
+];
+
+// FeedbackReview
+
+export const feedbackReviews = [
+  { id: 1, number: "140M", text: "Customers" },
+  { id: 2, number: "140M", text: "Total downloads" },
+  { id: 3, number: "140M", text: "Five Star Review" },
+];
+
+// ******************
 // ** Type
+// ******************
 
 // Button
 export const btnType = {
@@ -38,6 +67,8 @@ export const navbarItemType = {
   desktop: "text-lg",
   mobile: "text-4xl italic font-bold my-2",
 };
+
+// Heading
 
 export const headerTextColorType = {
   "primary-gradient":
