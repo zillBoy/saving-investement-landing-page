@@ -1,3 +1,10 @@
+/**
+ * Internal Dependencies
+ */
+import SavingsImage1 from "../assets/images/image-1.png";
+import SavingsImage2 from "../assets/images/image-2.png";
+import SavingsImage3 from "../assets/images/image-4.png";
+
 // ******************
 // Components
 // ******************
@@ -76,3 +83,33 @@ export const headerTextColorType = {
   "secondary-gradient":
     "text-transparent bg-clip-text bg-gradient-to-r from-lime-600 to-lime-300",
 };
+
+// ******************
+// ** Image
+// ******************
+
+export const savingsCards = [
+  {
+    title: "Smash Your Saving Goals",
+    description: "Save for your goal and achieve them with minimal effort.",
+    btnText: "Start Saving",
+    image: SavingsImage1,
+    className: "w-full sm:w-[49%]",
+  },
+  {
+    title: "Save for the rainy day.",
+    description:
+      "Never be caught unfresh, Build a safety net for unexpected expenses.",
+    btnText: "Start Saving",
+    image: SavingsImage2,
+    className: "w-full sm:w-[49%]",
+  },
+  {
+    title: "Shared Saving Plans",
+    description:
+      "Want to save together with your partner or friends? Create shared saving goals and contribute together.",
+    btnText: "Start Saving",
+    image: SavingsImage3,
+    className: "w-full",
+  },
+];

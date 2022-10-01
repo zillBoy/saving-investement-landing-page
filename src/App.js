@@ -2,9 +2,16 @@
  * React Dependencies
  */
 import React from "react";
+
+/**
+ * Internal Dependencies
+ */
 import ContentWrapper from "./components/ContentWrapper/ContentWrapper";
-import HeroHeader from "./components/HeroHeader/HeroHeader";
 import Navbar from "./components/Navbar/Navbar";
+import HeroHeader from "./components/HeroHeader/HeroHeader";
+import GradientLine from "./components/GradientLine/GradientLine";
+import SectionText from "./components/Text/SectionText";
+import SavingsGrid from "./components/Grid/SavingsGrid";
 
 const App = () => {
   return (
@@ -14,10 +21,11 @@ const App = () => {
         <HeroHeader />
       </ContentWrapper>
 
-      <div className="w-full h-4 bg-gradient-to-r from-lime-500 via-lime-400 to-lime-200"></div>
+      <GradientLine />
 
-      <ContentWrapper>
-        <div>Hello world</div>
+      <ContentWrapper className="bg-zinc-100">
+        <SectionText kicker="Savings" title="Send, spend and save smarter" />
+        <SavingsGrid />
       </ContentWrapper>
     </>
   );
