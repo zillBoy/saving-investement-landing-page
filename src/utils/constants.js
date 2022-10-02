@@ -8,6 +8,8 @@ import SavingsImage3 from "../assets/images/image-3.png";
 import InvestementsImage1 from "../assets/images/image-4.png";
 import InvestementsImage2 from "../assets/images/image-5.png";
 
+import SecurityImage from "../assets/images/image-6.png";
+
 import { ReactComponent as UserCheck } from "../assets/svgs/user-check.svg";
 import { ReactComponent as Layers } from "../assets/svgs/layers.svg";
 import { ReactComponent as Activity } from "../assets/svgs/activity.svg";
@@ -180,3 +182,15 @@ export const investementsCards = [
     className: "w-full sm:w-[49%]",
   },
 ];
+
+// Security
+
+export const securityCard = {
+  id: 1,
+  title: "Your Money is Safe with us",
+  description:
+    "We use the sate-of-the-art encryption to keep your money and data safe.",
+  btnText: "",
+  image: SecurityImage,
+  className: "w-full",
+};
