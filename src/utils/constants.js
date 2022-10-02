@@ -120,7 +120,8 @@ export const headerTextColorType = {
 
 export const gradientGridType = {
   default: "",
-  "primary-gradient": "bg-gradient-to-r from-lime-500 via-lime-400 to-lime-500",
+  "primary-gradient":
+    "bg-gradient-to-b sm:bg-gradient-to-r from-lime-500 via-lime-400 to-lime-500",
   "secondary-gradient":
     "bg-gradient-to-r from-zinc-800 via-gray-800 to-zinc-900",
 };

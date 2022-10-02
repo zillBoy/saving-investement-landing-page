@@ -42,6 +42,7 @@ const App = () => {
           className={`mb-0 py-16 ${gradientGridType["secondary-gradient"]}`}
           titleClassName="text-white text-3xl"
           descriptionClassName="text-zinc-300"
+          imageClassName="pt-12 sm:pt-0 sm:w-72"
         />
       </ContentWrapper>
     </>

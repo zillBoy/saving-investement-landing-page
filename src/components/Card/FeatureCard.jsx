@@ -16,6 +16,7 @@ const FeatureCard = ({
   className,
   titleClassName,
   descriptionClassName,
+  imageClassName,
 }) => {
   return (
     <div
@@ -37,7 +38,7 @@ const FeatureCard = ({
       </div>
       <div className="w-full sm:w-auto">
         <img
-          className="-my-10 sm:my-0 w-44 sm:w-52 float-right sm:float-none"
+          className={`-my-10 sm:my-0 w-44 sm:w-52 float-right sm:float-none ${imageClassName}`}
           src={image}
           alt={title}
         />
