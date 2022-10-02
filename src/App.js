@@ -12,6 +12,8 @@ import HeroHeader from "./components/HeroHeader/HeroHeader";
 import GradientLine from "./components/GradientLine/GradientLine";
 import SectionText from "./components/Text/SectionText";
 import SavingsGrid from "./components/Grid/SavingsGrid";
+import InvestmentsGrid from "./components/Grid/InvestmentsGrid";
+import CustomerGrid from "./components/Grid/CustomerGrid";
 
 const App = () => {
   return (
@@ -26,6 +28,11 @@ const App = () => {
       <ContentWrapper className="bg-zinc-100">
         <SectionText kicker="Savings" title="Send, spend and save smarter" />
         <SavingsGrid />
+
+        <SectionText kicker="Investments" title="Invest for the Long Term" />
+        <InvestmentsGrid />
+
+        <CustomerGrid />
       </ContentWrapper>
     </>
   );

@@ -3,7 +3,14 @@
  */
 import SavingsImage1 from "../assets/images/image-1.png";
 import SavingsImage2 from "../assets/images/image-2.png";
-import SavingsImage3 from "../assets/images/image-4.png";
+import SavingsImage3 from "../assets/images/image-3.png";
+
+import InvestementsImage1 from "../assets/images/image-4.png";
+import InvestementsImage2 from "../assets/images/image-5.png";
+
+import { ReactComponent as UserCheck } from "../assets/svgs/user-check.svg";
+import { ReactComponent as Layers } from "../assets/svgs/layers.svg";
+import { ReactComponent as Activity } from "../assets/svgs/activity.svg";
 
 // ******************
 // Components
@@ -59,6 +66,31 @@ export const feedbackReviews = [
   { id: 3, number: "140M", text: "Five Star Review" },
 ];
 
+// customerInfo
+
+export const customerInfo = [
+  {
+    id: 1,
+    Image: UserCheck,
+    title: "Easy to use",
+    description:
+      "Verify your customer identity in real-time from bank verified data.",
+  },
+  {
+    id: 2,
+    Image: Layers,
+    title: "All in one app",
+    description:
+      "Get a full view of your customers credit risk insights in real time.",
+  },
+  {
+    id: 3,
+    Image: Activity,
+    title: "Diversified Investing",
+    description: "Use the power of globally accepted & trusted credit scores",
+  },
+];
+
 // ******************
 // ** Type
 // ******************
@@ -84,12 +116,22 @@ export const headerTextColorType = {
     "text-transparent bg-clip-text bg-gradient-to-r from-lime-600 to-lime-300",
 };
 
+export const gradientGridType = {
+  default: "",
+  "primary-gradient": "bg-gradient-to-r from-lime-500 via-lime-400 to-lime-500",
+  "secondary-gradient":
+    "bg-gradient-to-r from-zinc-800 via-gray-800 to-zinc-900",
+};
+
 // ******************
-// ** Image
+// ** Grid Sections
 // ******************
+
+// Savings
 
 export const savingsCards = [
   {
+    id: 1,
     title: "Smash Your Saving Goals",
     description: "Save for your goal and achieve them with minimal effort.",
     btnText: "Start Saving",
@@ -97,6 +139,7 @@ export const savingsCards = [
     className: "w-full sm:w-[49%]",
   },
   {
+    id: 2,
     title: "Save for the rainy day.",
     description:
       "Never be caught unfresh, Build a safety net for unexpected expenses.",
@@ -105,11 +148,35 @@ export const savingsCards = [
     className: "w-full sm:w-[49%]",
   },
   {
+    id: 3,
     title: "Shared Saving Plans",
     description:
       "Want to save together with your partner or friends? Create shared saving goals and contribute together.",
     btnText: "Start Saving",
     image: SavingsImage3,
     className: "w-full",
+  },
+];
+
+// Investements
+
+export const investementsCards = [
+  {
+    id: 1,
+    title: "Start Growing your Portfolio",
+    description:
+      "Invest in Stocks options and ETFs at your pace and commission free.",
+    btnText: "Start Investing",
+    image: InvestementsImage1,
+    className: "w-full sm:w-[49%]",
+  },
+  {
+    id: 2,
+    title: "Buy and Sell Crypto",
+    description:
+      "Easily buy and sell cryptocurrencies at your pace, commission free.",
+    btnText: "Explore Crypto",
+    image: InvestementsImage2,
+    className: "w-full sm:w-[49%]",
   },
 ];
