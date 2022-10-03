@@ -93,6 +93,54 @@ export const customerInfo = [
   },
 ];
 
+// FooterNav
+
+export const footerNavigation = [
+  {
+    title: "Products",
+    items: [
+      {
+        name: "Savings",
+        href: "#",
+      },
+      {
+        name: "Investments",
+        href: "#",
+      },
+      {
+        name: "Shared Saving",
+        href: "#",
+      },
+    ],
+  },
+  {
+    title: "Company",
+    items: [
+      {
+        name: "About us",
+        href: "#",
+      },
+      {
+        name: "Career",
+        href: "#",
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    items: [
+      {
+        name: "Terms and conditions",
+        href: "#",
+      },
+      {
+        name: "Privacy policy",
+        href: "#",
+      },
+    ],
+  },
+];
+
 // ******************
 // ** Type
 // ******************
