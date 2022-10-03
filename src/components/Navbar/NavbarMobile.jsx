@@ -28,7 +28,7 @@ const NavbarMobile = () => {
           />
         </ReactPortal>
       )}
-      <div className="block sm:hidden">
+      <div className="block md:hidden">
         <NavbarItem item={mobileNavbarItem} onClick={toggleMenuHandler} />
       </div>
     </>

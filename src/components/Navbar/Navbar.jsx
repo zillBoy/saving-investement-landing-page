@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="flex py-4 items-center justify-between bg-neutral-900">
       <NavbarLogo />
       <NavbarList />
-      <Button text="Get started" parentClassName="hidden sm:block" />
+      <Button text="Get started" parentClassName="hidden md:block" />
       <NavbarMobile />
     </div>
   );

@@ -21,7 +21,7 @@ const NavbarList = ({ className = "hidden", type = "desktop" }) => {
   }, [type]);
 
   return (
-    <div className={`sm:block ${className}`}>
+    <div className={`md:block ${className}`}>
       {navbarItems.map((item, index) => (
         <NavbarItem key={index} item={item} className={itemClassName} />
       ))}
