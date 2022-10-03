@@ -25,7 +25,7 @@ const FeatureCard = ({
       <div>
         <h3 className={`text-2xl font-semibold ${titleClassName}`}>{title}</h3>
         <p
-          className={`text-base text-zinc-500 w-72 py-2 ${descriptionClassName}`}
+          className={`text-base text-zinc-500 w-full sm:w-72 py-2 ${descriptionClassName}`}
         >
           {description}
         </p>
@@ -38,7 +38,7 @@ const FeatureCard = ({
       </div>
       <div className="w-full sm:w-auto">
         <img
-          className={`-my-10 sm:my-0 w-44 sm:w-52 float-right sm:float-none ${imageClassName}`}
+          className={`-my-0 sm:my-0 w-44 sm:w-52 float-right sm:float-none ${imageClassName}`}
           src={image}
           alt={title}
         />
