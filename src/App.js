@@ -16,6 +16,8 @@ import InvestmentsGrid from "./components/Grid/InvestmentsGrid";
 import CustomerGrid from "./components/Grid/CustomerGrid";
 import FeatureCard from "./components/Card/FeatureCard";
 import { gradientGridType, securityCard } from "./utils/constants";
+import Footer from "./components/Footer/Footer";
+import SubscribeForm from "./components/Form/SubscribeForm";
 
 const App = () => {
   return (
@@ -44,6 +46,14 @@ const App = () => {
           descriptionClassName="text-zinc-300"
           imageClassName="pt-12 sm:pt-0 sm:w-72"
         />
+
+        <SubscribeForm />
+      </ContentWrapper>
+
+      <GradientLine />
+
+      <ContentWrapper className="bg-neutral-900">
+        <Footer />
       </ContentWrapper>
     </>
   );

@@ -101,6 +101,7 @@ export const customerInfo = [
 export const btnType = {
   primary: "from-green-600 to-lime-600",
   secondary: "from-stone-600 to-zinc-600",
+  tertiary: "from-white to-white",
 };
 
 // Navbar
